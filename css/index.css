@@ -19,9 +19,7 @@
 }
 
 /* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
-}
+
 
 #featured-card img {
   max-height: 15em;
@@ -35,16 +33,15 @@
   flex-wrap: wrap;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
-.row img {
-  margin-left: 3em;
-}
 
 img {
   border-radius: 1em;
+}
+
+.img-header .centered {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
