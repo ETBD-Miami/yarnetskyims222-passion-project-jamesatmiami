@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <meta name="author" content="James Beaupry">
-    <meta name="description" content="describe your page here">
+    <meta name="description" content="PEV Hub Home Page">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/index.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nobile&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,13 +22,12 @@
     <!--Navbar-->
     <div id="navbar">
         <a href="index.html" id="logo">PEV Hub</a>
-        <a href="index.html">Home</a>
         <a href="index.html">Recommendations</a>
         <a href="pages/skateboards.html">Skateboards</a>
-        <a href="index.html">One Wheel Boards</a>
-        <a href="index.html">Electric Unicycle</a>
-        <a href="index.html">Scooters</a>
-        <a href="index.html">Miscellanous</a>
+        <a href="pages/onewheel.html">One Wheel Boards</a>
+        <a href="pages/euc.html">Electric Unicycle</a>
+        <a href="pages/escooter.html">Scooters</a>
+        <a href="pages/misc.html">Miscellanous</a>
     </div>
     <script src="js/nav.js"></script>
 
@@ -38,85 +38,62 @@
             <!--Image Header-->
             <div class="img-header">
                 <img src="images/road.jpg">
-                <div class="centered">
-                    <h1>Home</h1>
-                </div>
             </div>
 
             <h1><b>Featured PEVs</b></h1>
 
-            <div id="featured-cards">
-                <div id="featured-card">
-                    <div class="card">
-                        <img src="images/pintx.png" alt="Avatar" style="width:100%">
-                        <div class="container">
-                            <h4><b>John Doe</b></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Vulputate odio ut enim blandit volutpat maecenas.
-                                Dictum varius duis at consectetur lorem donec massa.</p>
-                        </div>
+            <div class="featured-cards">
+                <div class="card">
+                    <img src="images/pintx.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Onewheel Pint X</b></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Vulputate odio ut enim blandit volutpat maecenas.
+                            Dictum varius duis at consectetur lorem donec massa.</p>
                     </div>
                 </div>
 
-                <div id="featured-card">
-                    <div class="card">
-                        <img src="images/hurricane.png" alt="Avatar" style="width:100%">
-                        <div class="container">
-                            <h4><b>John Doe</b></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Vulputate odio ut enim blandit volutpat maecenas.
-                                Dictum varius duis at consectetur lorem donec massa.</p>
-                        </div>
+                <div class="card">
+                    <img src="images/hurricane.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Meepo Hurricane</b></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Vulputate odio ut enim blandit volutpat maecenas.
+                            Dictum varius duis at consectetur lorem donec massa.</p>
                     </div>
                 </div>
 
-                <div id="featured-card">
-                    <div class="card">
-                        <img src="images/pintx.png" alt="Avatar" style="width:100%">
-                        <div class="container">
-                            <h4><b>John Doe</b></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Vulputate odio ut enim blandit volutpat maecenas.
-                                Dictum varius duis at consectetur lorem donec massa.</p>
-                        </div>
+
+                <div class="card">
+                    <a href="pages/escooter.html">
+                        <img src="images/scooters/ninebot-max.jpg" alt="Avatar" style="width:100%">
+                    </a>
+                    <div class="container">
+                        <h4><b>Segway Ninebot Kickscooter Max</b></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Vulputate odio ut enim blandit volutpat maecenas.
+                            Dictum varius duis at consectetur lorem donec massa.</p>
                     </div>
                 </div>
-
-                <div id="featured-card">
-                    <div class="card">
-                        <img src="images/pintx.png" alt="Avatar" style="width:100%">
-                        <div class="container">
-                            <h4><b>John Doe</b></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Vulputate odio ut enim blandit volutpat maecenas.
-                                Dictum varius duis at consectetur lorem donec massa.</p>
-                        </div>
+                
+                <div class="card">
+                    <a href="pages/euc.html">
+                        <img src="images/eucs/inmotionV5F.jpg" alt="Avatar" style="width:100%">
+                    </a>
+                    <div class="container">
+                        <h4><b>Inmotion V5F</b></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Vulputate odio ut enim blandit volutpat maecenas.
+                            Dictum varius duis at consectetur lorem donec massa.</p>
                     </div>
                 </div>
             </div>
 
             <h1><b>About Us</b></h1>
             <div class="row">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Id porta nibh venenatis cras sed felis. Scelerisque fermentum dui faucibus in
-                    ornare. Erat imperdiet sed euismod nisi. Felis imperdiet proin fermentum leo vel orci. Leo duis ut
-                    diam
-                    quam nulla porttitor. Scelerisque fermentum dui faucibus in ornare quam. Risus feugiat in ante metus
-                    dictum at tempor commodo. Tellus orci ac auctor augue mauris augue. Quisque egestas diam in arcu
-                    cursus
-                    euismod quis. Eget felis eget nunc lobortis mattis. Maecenas sed enim ut sem viverra aliquet eget
-                    sit
-                    amet. Malesuada bibendum arcu vitae elementum curabitur vitae. Sed odio morbi quis commodo odio
-                    aenean.
-                    Cursus risus at ultrices mi tempus imperdiet nulla malesuada. Curabitur vitae nunc sed velit
-                    dignissim
-                    sodales ut. Eget duis at tellus at urna condimentum. Ipsum suspendisse ultrices gravida dictum fusce
-                    ut. At consectetur lorem donec massa sapien faucibus et molestie. Lorem sed risus ultricies
-                    tristique nulla aliquet. Sed vulputate odio ut enim blandit volutpat maecenas. In ante metus dictum
-                    at. Habitasse platea dictumst vestibulum rhoncus est. Sociis natoque penatibus et magnis dis
-                    parturient montes nascetur ridiculus. Iaculis eu non diam phasellus vestibulum lorem sed. Aliquet
-                    risus feugiat in ante metus. Sodales neque sodales ut etiam sit amet.
+                <p>PEV Hub aims to be your one-stop-shop for all things related to PEVs. With our website, you can view
+                    PEVs in five different categories; electric scooters, electric skateboards, one wheel boards,
+                    electric unicycles, and miscellanous PEVS. For
 
                     Nibh ipsum consequat nisl vel. Quisque sagittis purus sit amet volutpat. Vitae elementum curabitur
                     vitae nunc sed velit. Turpis egestas maecenas pharetra convallis posuere morbi leo urna. Lectus sit
