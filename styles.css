@@ -17,6 +17,7 @@ h2 {
 
 h3 {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
 }
 
 h4 {
@@ -41,7 +42,7 @@ a {
 /* Create a sticky/fixed navbar */
 #navbar {
   overflow: hidden;
-  background-color: #9DBEBB;
+  background-color: #72A0A2;
   padding: 35px 10px;
   /* Large padding which will shrink on scroll (using JS) */
   transition: 0.4s;
@@ -109,6 +110,14 @@ a {
   #navbar-right {
     float: none;
   }
+
+  .header {
+    margin-top: 15em;
+  }
+
+  .img-header {
+    margin-top: 15em;
+  }
 }
 
 .row {
@@ -118,7 +127,8 @@ a {
 }
 
 .rating {
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
 .checked {
@@ -158,7 +168,7 @@ a {
   margin-right: auto;
   margin-left: auto;
   width: 90vw;
-  height: 20em;
+  height: 10em;
 
   border-radius: 0.5em;
 }
@@ -175,7 +185,7 @@ a {
 
 .centered {
   position: absolute;
-  top: 63%;
+  top: 73%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -210,6 +220,21 @@ a {
   width: 41em;
 }
 
+.xlcard img {
+  max-height: 10em;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+.xlcard img:active {
+  max-height: 20em;
+  object-fit: contain;
+}
+
+.xlcard img:hover {
+  cursor: pointer;
+}
+
 .left {
   width: 90%;
   padding: 2px 16px;
@@ -225,7 +250,7 @@ a {
   background-color: #468189;
   border: none;
   color: white;
-  padding: 0em 0.5em;
+  padding: 1em 3em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -266,4 +291,38 @@ a {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 0.25em;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip .tooltiptext {
+  top: 1em;
+  left: 105%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
