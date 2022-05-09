@@ -10,10 +10,11 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nobile&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Nobile&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
@@ -26,22 +27,24 @@
         <a href="index.html">Recommendations</a>
         <a href="pages/skateboards.html">Skateboards</a>
         <a href="pages/onewheel.html">One Wheel Boards</a>
-        <a href="pages/euc.html">Electric Unicycle</a>
+        <a href="pages/euc.html">Electric Unicycles</a>
         <a href="pages/escooter.html">Scooters</a>
         <a href="pages/misc.html">Miscellanous</a>
     </div>
-    <script src="js/nav.js"></script>
 
     <main class="container">
 
         <div id="content">
 
             <!--Image Header-->
-            <div class="img-header">
+            <div class="header" id="home">
                 <img src="images/road.jpg">
+                <div class="centered">
+                    <h1>Welcome to PEV Hub</h1>
+                </div>
             </div>
 
-            <h1><b>Featured PEVs</b></h1>
+            <h2><b>Featured PEVs</b></h2>
 
             <div class="featured-cards">
                 <div class="card">
@@ -90,7 +93,7 @@
                 </div>
             </div>
 
-            <h1><b>About Us</b></h1>
+            <h2><b>About Us</b></h2>
             <div class="row">
                 <p>PEV Hub aims to be your one-stop-shop for all things related to PEVs. With our website, you can view
                     PEVs in five different categories; electric scooters, electric skateboards, one wheel boards,
@@ -116,11 +119,13 @@
                     <div class="mySlides fade">
                         <img src="images/scooters/escooter3.jpg" alt="About Us" style="width:100%">
                     </div>
-                    <script src="js/slideshow.js"></script>
+                    
                 </div>
             </div>
         </div>
     </main>
+    <script src="js/slideshow.js"></script>dxc                     
+    <script src="js/nav.js"></script>
 </body>
 
 </html>
